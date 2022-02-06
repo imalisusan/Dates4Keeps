@@ -10,6 +10,7 @@ class ListBirthdaysFeature extends Feature
 {
     public function handle(Request $request)
     {
-        $this->run(ListBirthdaysJob::class);
+        $birthdays = Birthday::all();
+        return view('birthdays.index', compact('birthdays')); 
     }
 }
