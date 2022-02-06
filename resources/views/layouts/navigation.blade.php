@@ -18,7 +18,7 @@
                     <x-nav-link :href="route('add_birthday')" :active="request()->routeIs('add_birthday')">
                         {{ __('Add Birthday') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('add_birthday')" :active="request()->routeIs('add_birthday')">
+                    <x-nav-link :href="route('birthdays.index')" :active="request()->routeIs('birthdays.index')">
                         {{ __('View Birthdays') }}
                     </x-nav-link>
                 </div>

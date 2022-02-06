@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Lucid\Units\Controller;
 use App\Features\AddBirthdayFeature;
-use App\Features\ViewBirthdayFeature;
+use App\Features\ListBirthdaysFeature;
 
 class BirthdayController extends Controller
 {
@@ -14,8 +14,8 @@ class BirthdayController extends Controller
         return $this->serve(AddBirthdayFeature::class);
     }
 
-    public function view()
+    public function birthdays()
     {
-        return $this->serve(ViewBirthdayFeature::class);
+        return $this->serve(ListBirthdaysFeature::class);
     }
 }
