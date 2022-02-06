@@ -4,6 +4,7 @@ namespace App\Features;
 
 use Illuminate\Http\Request;
 use Lucid\Units\Feature;
+use App\Models\Birthday
 use App\Domains\Birthday\Jobs\ListBirthdaysJob;
 
 class ListBirthdaysFeature extends Feature
