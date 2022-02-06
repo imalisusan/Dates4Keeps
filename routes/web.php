@@ -30,4 +30,4 @@ Route::get('/submit', function() {
 
 Route::post('/submit', [BirthdayController::class, 'add']);
 
-Route::get('/show', function() { return view('birthdays.view');})->name('view_birthday');
+Route::get('/index', [BirthdayController::class, 'birthdays'])->name('birthdays.index');
